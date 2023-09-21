@@ -1,0 +1,90 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 3,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 3,
+      "end_animation": 5,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 5,
+      "end_animation": 7,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 7,
+      "end_animation": 8,
+      "number": 5
+    },
+    {
+      "type": "slide",
+      "start_animation": 8,
+      "end_animation": 9,
+      "number": 6
+    },
+    {
+      "type": "slide",
+      "start_animation": 9,
+      "end_animation": 11,
+      "number": 7
+    },
+    {
+      "type": "slide",
+      "start_animation": 11,
+      "end_animation": 14,
+      "number": 8
+    },
+    {
+      "type": "slide",
+      "start_animation": 14,
+      "end_animation": 16,
+      "number": 9
+    },
+    {
+      "type": "last",
+      "start_animation": 16,
+      "end_animation": 19,
+      "number": 10
+    }
+  ],
+  "files": [
+    "slides/files/MoDau/977168113_2576140854_223132457.mp4",
+    "slides/files/MoDau/2582607167_254979161_2928288519.mp4",
+    "slides/files/MoDau/2582607167_150269519_223132457.mp4",
+    "slides/files/MoDau/2582607167_1231789165_1743533710.mp4",
+    "slides/files/MoDau/2582607167_2379228326_1743533710.mp4",
+    "slides/files/MoDau/2582607167_3593419697_94804159.mp4",
+    "slides/files/MoDau/2582607167_1699392365_2398145229.mp4",
+    "slides/files/MoDau/2582607167_3895978749_2950959369.mp4",
+    "slides/files/MoDau/2582607167_3408480238_223132457.mp4",
+    "slides/files/MoDau/2582607167_1964396065_2234556970.mp4",
+    "slides/files/MoDau/2582607167_4058952366_767238508.mp4",
+    "slides/files/MoDau/2582607167_728279753_564737985.mp4",
+    "slides/files/MoDau/2582607167_3087096840_3516560572.mp4",
+    "slides/files/MoDau/2582607167_2142371871_3729608070.mp4",
+    "slides/files/MoDau/2582607167_3473790501_1909823273.mp4",
+    "slides/files/MoDau/2582607167_3917791676_2675293998.mp4",
+    "slides/files/MoDau/2582607167_3779852030_831580919.mp4",
+    "slides/files/MoDau/2582607167_3561546802_1141312600.mp4",
+    "slides/files/MoDau/2582607167_329969645_957426839.mp4"
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "background_color": "black"
+}
