@@ -66,23 +66,45 @@ class TrumVN(Slide,MovingCameraScene,Scene):
         self.next_slide()
         square_1=Rectangle(width=2.0, height=4.0)
         square_1.to_edge(ORIGIN)
+        width_brace = Brace(square_1, direction=DOWN)
+        height_brace = Brace(square_1, direction=LEFT)
 
+        width_label = width_brace.get_text(str(square_1.width))
+        height_label = height_brace.get_text(str(square_1.height))
+
+        self.play(Create(square_1), Create(width_brace), Create(height_brace))
+        self.play(Write(width_label), Write(height_label))
+        self.wait()
+        self.next_slide()
+        self.play(FadeOut(width_brace),FadeOut(width_label),FadeOut(height_brace),FadeOut(height_label))
         vertices = square_1.get_vertices()
 
         decimal_square1=DecimalNumber(num_decimal_places=0)
         decimal_square1.add_updater(lambda d: d.next_to(square_1,DOWN))
         decimal_square1.set_value(8)
-        self.play(Create(square_1),Write(decimal_square1))
+        self.play(Write(decimal_square1))
         self.play(square_1.animate.set_fill(GREEN,opacity=1))
         self.next_slide()
         self.play(square_1.animate.to_edge(LEFT))
         square_2 = Rectangle(width=1.0, height=2.0)
         square_2.to_edge(ORIGIN)
 
+        width_brace = Brace(square_2, direction=DOWN)
+        height_brace = Brace(square_2, direction=LEFT)
+
+        width_label = width_brace.get_text(str(square_2.width))
+        height_label = height_brace.get_text(str(square_2.height))
+
+        self.play(Create(square_2), Create(width_brace), Create(height_brace))
+
         decimal_square2 = DecimalNumber(num_decimal_places=0,font_size=DEFAULT_FONT_SIZE-5)
         decimal_square2.set_value(2)
         decimal_square2.add_updater(lambda d: d.next_to(square_2,DOWN))
-        self.play(Create(square_2), Write(decimal_square2))
+        self.wait()
+        self.next_slide()
+        self.play(FadeOut(width_brace),FadeOut(width_label),FadeOut(height_brace),FadeOut(height_label))
+        self.play(Write(decimal_square2))
+
         self.play(square_2.animate.set_fill(BLUE, opacity=1))
         self.next_slide()
         dot_B_sq1=self.createDot(1,UP,square_1,"$B'$",WHITE)
@@ -94,8 +116,8 @@ class TrumVN(Slide,MovingCameraScene,Scene):
 
         dot_B_sq2=self.createDot(1,UP,square_2,"$B$",WHITE)
         dot_A_sq2=self.createDot(2,UP,square_2,"$A$",WHITE)
-        dot_D_sq2=self.createDot(3,DOWN,square_2,"$D$",WHITE)
-        dot_C_sq2=self.createDot(4,DOWN,square_2,"$C$",WHITE)
+        dot_D_sq2=self.createDot(3,DOWN,square_2,"$D$",WHITE,.5)
+        dot_C_sq2=self.createDot(4,DOWN,square_2,"$C$",WHITE,.5)
       
         gr_2=VGroup(dot_A_sq2[0],dot_B_sq2[0],dot_C_sq2[0],dot_D_sq2[0])
         gr1_2=VGroup(dot_A_sq2[1],dot_B_sq2[1],dot_C_sq2[1],dot_D_sq2[1])
@@ -142,7 +164,7 @@ class TrumVN(Slide,MovingCameraScene,Scene):
         self.next_slide()
         cm2=Text(f"Xét tam giác OA'B' có AB // A'B', theo Thales, ta có:",font_size=24)
         cm2.next_to(cm1,DOWN,buff=0.25)
-        cm2.shift(LEFT*1.5)
+        cm2.shift(LEFT)
         self.play(Write(cm2))
         self.play(
                lineAtoO.animate.set_color(RED),
@@ -150,33 +172,38 @@ class TrumVN(Slide,MovingCameraScene,Scene):
           lineBtoO.animate.set_color(RED),
              lineBprimetoO.animate.set_color(RED),
         )
-       # Plo=Polygon(dot_A_sq1[0].get_center(),dot_A_sq2[0].get_center(),dot_B_sq1[0].get_center(),dot_B_sq2[0].get_center(),O.get_center(),stroke_width=5,fill_color = ORANGE, fill_opacity=0.5)
-      #  Plo1=Polygon(dot_A_sq1[0].get_center(),dot_B_sq1[0].get_center(),dot_A_sq2[0].get_center(),stroke_width=5,fill_color = ORANGE, fill_opacity=0.5)
-      #  self.play(Create(Plo),Create(Plo1))
-
         self.next_slide()
         cm3 = Tex(r"$$\frac{OA}{OA'}=\frac{OB}{OB'}=\frac{1}{2}$$", font_size=24)
         cm3.next_to(cm2,DOWN,buff=0.25)
         self.play(Write(cm3))
-
-
+        self.next_slide()
+        self.play(
+               lineAtoO.animate.set_color(WHITE),
+        lineAprimetoO.animate.set_color(WHITE),
+          lineBtoO.animate.set_color(WHITE),
+             lineBprimetoO.animate.set_color(WHITE),
+        )
         lineDprimetoD = Line(dot_D_sq2[0].get_center(), dot_D_sq1[0].get_center(), color=WHITE)
-
-# Animate the line connecting D' to D
-        self.play(Create(lineDprimetoD))
-
-# Create the line connecting D to O
         lineDtoO = Line(dot_D_sq1[0].get_center(), O.get_center(), color=WHITE)
+        self.play(Create(lineDtoO),Create(lineDprimetoD))
 
-# Animate the line connecting D to O
-        self.play(Create(lineDtoO))
+        lineCprimetoC = Line(dot_C_sq2[0].get_center(), dot_C_sq1[0].get_center(), color=WHITE)
+        lineCtoO = Line(dot_C_sq1[0].get_center(), O.get_center(), color=WHITE)
+        self.play(Create(lineCtoO),Create(lineCprimetoC))
+        kl=Text(f"=> A,B lần lượt là trung điểm của A'O và B'O",font_size=24)
+        kl.to_edge(RIGHT)
+        kl.next_to(cm3,DOWN,buff=0.25)
+        self.play(Write(kl))
+        cm4=Text(f"Gọi E là giao điểm của BC và OC'",font_size=24)
+        cm4.next_to(kl,DOWN,buff=0.25)
+        cm4.shift(RIGHT)
+        self.play(Write(cm4))
 
-        
 
-    def createDot(self,index,dir,sq,text,colorA):
+    def createDot(self,index,dir,sq,text,colorA,bufff=DEFAULT_MOBJECT_TO_MOBJECT_BUFFER):
         dot=always_redraw(lambda:Dot(sq.get_vertices()[index-1],color=colorA))
         texttt=Tex(text)
-        always_redraw(lambda:texttt.next_to(dot,dir))
+        always_redraw(lambda:texttt.next_to(dot,dir,buff=bufff))
         return [dot,texttt]
     def calculateIntersection(self, point1, point2, point3, point4):
         x1, y1 = point1[0], point1[1]

@@ -39,38 +39,56 @@
     {
       "type": "slide",
       "start_animation": 9,
-      "end_animation": 11,
+      "end_animation": 12,
       "number": 7
     },
     {
       "type": "slide",
-      "start_animation": 11,
-      "end_animation": 14,
+      "start_animation": 12,
+      "end_animation": 15,
       "number": 8
     },
     {
       "type": "slide",
-      "start_animation": 14,
-      "end_animation": 22,
+      "start_animation": 15,
+      "end_animation": 18,
       "number": 9
     },
     {
       "type": "slide",
-      "start_animation": 22,
-      "end_animation": 25,
+      "start_animation": 18,
+      "end_animation": 21,
       "number": 10
     },
     {
       "type": "slide",
-      "start_animation": 25,
-      "end_animation": 27,
+      "start_animation": 21,
+      "end_animation": 29,
       "number": 11
     },
     {
-      "type": "last",
-      "start_animation": 27,
-      "end_animation": 30,
+      "type": "slide",
+      "start_animation": 29,
+      "end_animation": 32,
       "number": 12
+    },
+    {
+      "type": "slide",
+      "start_animation": 32,
+      "end_animation": 34,
+      "number": 13
+    },
+    {
+      "type": "slide",
+      "start_animation": 34,
+      "end_animation": 35,
+      "number": 14
+    },
+    {
+      "type": "last",
+      "start_animation": 35,
+      "end_animation": 40,
+      "number": 15
     }
   ],
   "files": [
@@ -83,27 +101,37 @@
     "slides/files/TrumVN/2582607167_1699392365_2398145229.mp4",
     "slides/files/TrumVN/2582607167_3895978749_2950959369.mp4",
     "slides/files/TrumVN/2582607167_3408480238_223132457.mp4",
-    "slides/files/TrumVN/2582607167_1964396065_2234556970.mp4",
-    "slides/files/TrumVN/2582607167_3120101887_767238508.mp4",
-    "slides/files/TrumVN/2582607167_392360138_564737985.mp4",
-    "slides/files/TrumVN/2582607167_1516074886_3419619374.mp4",
-    "slides/files/TrumVN/2582607167_2142371871_3929362086.mp4",
-    "slides/files/TrumVN/2582607167_2357777503_1353147011.mp4",
-    "slides/files/TrumVN/2582607167_3917791676_898973774.mp4",
-    "slides/files/TrumVN/2582607167_3304653728_4168987912.mp4",
-    "slides/files/TrumVN/2582607167_1354329305_3616639904.mp4",
-    "slides/files/TrumVN/2582607167_3175018919_412375093.mp4",
-    "slides/files/TrumVN/2582607167_1696551730_711768150.mp4",
-    "slides/files/TrumVN/2582607167_4293488166_1487349503.mp4",
-    "slides/files/TrumVN/2582607167_1840344603_3914868920.mp4",
-    "slides/files/TrumVN/2582607167_1784482562_969425341.mp4",
-    "slides/files/TrumVN/2582607167_3897241041_1959892541.mp4",
-    "slides/files/TrumVN/2582607167_1343720790_3671711540.mp4",
-    "slides/files/TrumVN/2582607167_2313112677_214610923.mp4",
-    "slides/files/TrumVN/2582607167_3246724388_753426661.mp4",
-    "slides/files/TrumVN/2582607167_1056170622_1610003890.mp4",
-    "slides/files/TrumVN/2582607167_148252500_758143860.mp4",
-    "slides/files/TrumVN/2582607167_3097582150_2636088434.mp4"
+    "slides/files/TrumVN/2582607167_1693015297_2234556970.mp4",
+    "slides/files/TrumVN/2582607167_2917763361_4172550851.mp4",
+    "slides/files/TrumVN/2582607167_329969645_2866590717.mp4",
+    "slides/files/TrumVN/2582607167_1500566985_1402962235.mp4",
+    "slides/files/TrumVN/2582607167_2650130884_1775078411.mp4",
+    "slides/files/TrumVN/2582607167_3120101887_1045560198.mp4",
+    "slides/files/TrumVN/2582607167_392360138_249031537.mp4",
+    "slides/files/TrumVN/2582607167_2759980712_4001231524.mp4",
+    "slides/files/TrumVN/2582607167_329969645_3389292826.mp4",
+    "slides/files/TrumVN/2582607167_4006520965_3458749875.mp4",
+    "slides/files/TrumVN/2582607167_1907944029_3201096798.mp4",
+    "slides/files/TrumVN/2582607167_2142371871_523771207.mp4",
+    "slides/files/TrumVN/2582607167_2357777503_2792705137.mp4",
+    "slides/files/TrumVN/2582607167_3917791676_2144921471.mp4",
+    "slides/files/TrumVN/2582607167_3008087580_450937713.mp4",
+    "slides/files/TrumVN/2582607167_4255257120_1052086996.mp4",
+    "slides/files/TrumVN/2582607167_3175018919_3794689570.mp4",
+    "slides/files/TrumVN/2582607167_1696551730_783383566.mp4",
+    "slides/files/TrumVN/2582607167_4293488166_2763794261.mp4",
+    "slides/files/TrumVN/2582607167_1840344603_899635498.mp4",
+    "slides/files/TrumVN/2582607167_1784482562_3452336738.mp4",
+    "slides/files/TrumVN/2582607167_2629116802_474513184.mp4",
+    "slides/files/TrumVN/2582607167_1201860707_4053709929.mp4",
+    "slides/files/TrumVN/2582607167_471760661_1295750508.mp4",
+    "slides/files/TrumVN/2582607167_682287693_4186137059.mp4",
+    "slides/files/TrumVN/2582607167_2150555190_437907773.mp4",
+    "slides/files/TrumVN/2582607167_3648688189_958961134.mp4",
+    "slides/files/TrumVN/2582607167_1287890414_3077299824.mp4",
+    "slides/files/TrumVN/2582607167_3551651285_1294259639.mp4",
+    "slides/files/TrumVN/2582607167_228092661_2847015816.mp4",
+    "slides/files/TrumVN/2582607167_1501112540_4214992547.mp4"
   ],
   "resolution": [
     1920,
